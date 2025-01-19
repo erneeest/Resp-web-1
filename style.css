@@ -107,6 +107,8 @@ Black: #000 (Black)
 
     --white: #fff;
     --black: #000;
+
+    --view-height:100px;
  }
 
 *{
@@ -129,7 +131,6 @@ body{
     max-width: 1200px;
     width: 90%;
     margin: 0 auto;
-    text-align: center;
 }
 
 h1,h2,h3,h4,h5{
@@ -197,12 +198,12 @@ ul{
 /* ============= SECTIONS ============= */
 
 .nav-bar{
-    height: 100px;
+    height: var(--view-height);
     display: flex;
     justify-content: space-around;
-    /* gap: 8rem; */
+    gap: 8rem;
     align-items: center;
-    margin-bottom: 8rem;
+    margin-bottom: 6rem;
 }
 
 .website-logo{
@@ -220,6 +221,7 @@ ul{
 /* ========== */
 
 .hero-section-div{
+    text-align: center;
     display: flex;
     flex-direction: row;
     align-items: center;    
@@ -250,7 +252,8 @@ ul{
 .hero-input-text{
     color: gray;
     font-size: var(--text-p);
-    width: 30rem;
+    max-width: 30rem;
+    width: 100%;
     border: 5px solid var(--primary-shade);
     border-radius: 8px;
     padding: 1.5rem;
@@ -258,7 +261,43 @@ ul{
 
 
 .hero-section-image{
-    width: 35rem;
+    max-width: 35rem;
+    /* min-width: 30rem; */
+    width: 100%;
+}
+
+@media(max-width: 1022px){
+    
+    .hero-section-div{
+        flex-direction: column;
+    }
+
+    .nav-bar{
+        justify-content: center;
+        gap: 5rem;
+        align-content: center;
+    }
+
+    .website-logo{
+        order: -1;
+    }
+ 
+}
+@media(max-width: 765px){
+    
+    .nav-bar{
+        height: auto;
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        
+        justify-content: center;
+        gap: 2rem;
+        align-items: center;
+        margin-bottom: 1rem;
+        flex-wrap: wrap;
+    }
+    
 }
 
 
