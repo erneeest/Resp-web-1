@@ -122,8 +122,8 @@ body{
     font-family: var(--font-family);
     font-weight: var(--text-normal);
     color: var(--grey-base);
-    background: rgb(147,149,108);
-    background: radial-gradient(circle, rgba(147,149,108,1) 0%, rgba(73,115,82,1) 100%);
+    /* background: rgb(147,149,108);
+    background: radial-gradient(circle, rgba(147,149,108,1) 0%, rgba(73,115,82,1) 100%); */
 }
 .main-container{
     max-width: 1200px;
