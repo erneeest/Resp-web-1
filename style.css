@@ -81,7 +81,7 @@ Black: #000 (Black)
     --font-family: "M PLUS Rounded 1c", serif; 
 
     /* ---------- COLORS ---------- */
-
+    --primary-bg: #e6eadf;
 /* PRIMARY */
     --primary-tint: #a3e635;
     --primary-base: #4d7c0f;
@@ -122,6 +122,8 @@ body{
     font-family: var(--font-family);
     font-weight: var(--text-normal);
     color: var(--grey-base);
+    background: rgb(147,149,108);
+    background: radial-gradient(circle, rgba(147,149,108,1) 0%, rgba(73,115,82,1) 100%);
 }
 .main-container{
     max-width: 1200px;
@@ -159,8 +161,21 @@ p{
 a{
     font-size: var(--text-base);
     text-decoration: none;
+    display: inline-block;
+}
+ul{
+    list-style: none;
 }
 .small-text{
     font-size: var(--text-sm);
 }
 
+/* ============ buttons ============ */
+
+.btn{
+    color: white;
+    background-color: var(--primary-base);
+    padding: 1.5rem 3rem;
+    border-radius: 3rem;
+    border: .3rem solid var(--grey-shade);
+}
