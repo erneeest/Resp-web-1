@@ -78,7 +78,7 @@ Black: #000 (Black)
     --letter-space-tight: -2px;
 
 /* FONT FAMILY */
-    --font-family: "M PLUS Rounded 1c", serif; 
+    --font-family: "M PLUS Rounded 1c", sans-serif; 
 
     /* ---------- COLORS ---------- */
     --primary-bg: #e6eadf;
@@ -157,6 +157,7 @@ h5{
 }
 p{
     font-size: var(--text-p);
+    line-height: var(--line-height-normal);
 }
 a{
     color: var(--grey-shade);
@@ -176,7 +177,7 @@ ul{
 .btn{
     color: white;
     padding: 1.5rem 3rem;
-    border-radius: 12px;
+    border-radius: 8px;
     border: .3rem solid var(--grey-shade);
     font-size: var(--text-p);
     font-weight: var(--text-bold);
@@ -199,6 +200,7 @@ ul{
     height: 100px;
     display: flex;
     justify-content: space-around;
+    /* gap: 8rem; */
     align-items: center;
     margin-bottom: 8rem;
 }
@@ -221,7 +223,7 @@ ul{
     display: flex;
     flex-direction: row;
     align-items: center;    
-    background-color: var(--secondary-tint);
+    /* background-color: var(--secondary-tint); */
     padding: 2rem;
     border-radius: 40px;
     width: 80%;
@@ -232,11 +234,26 @@ ul{
     flex-direction: column;
     gap: 2rem;
 }
+.header-hero{
+    letter-spacing: .5px;
+    font-size: var(--text-h3);
+    font-family: 'poppins', sans-serif;
+    font-family: var(--font-family);
+}
 .hero-section-buttons{
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 2rem;
+    align-items: center;
+}
+.hero-input-text{
+    color: gray;
+    font-size: var(--text-p);
+    width: 30rem;
+    border: 5px solid var(--primary-shade);
+    border-radius: 8px;
+    padding: 1.5rem;
 }
 
 
