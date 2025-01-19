@@ -176,6 +176,6 @@ ul{
     color: white;
     background-color: var(--primary-base);
     padding: 1.5rem 3rem;
-    border-radius: 3rem;
+    border-radius: 12px;
     border: .3rem solid var(--grey-shade);
 }
