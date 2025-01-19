@@ -107,6 +107,8 @@ Black: #000 (Black)
 
     --white: #fff;
     --black: #000;
+
+    --view-height:100px;
  }
 
 *{
@@ -196,13 +198,12 @@ ul{
 /* ============= SECTIONS ============= */
 
 .nav-bar{
-    height: 100px;
+    height: var(--view-height);
     display: flex;
     justify-content: space-around;
     gap: 8rem;
     align-items: center;
-    margin-bottom: 8rem;
-    background-color: #365314;
+    margin-bottom: 6rem;
 }
 
 .website-logo{
@@ -261,7 +262,7 @@ ul{
 
 .hero-section-image{
     max-width: 35rem;
-    min-width: 30rem;
+    /* min-width: 30rem; */
     width: 100%;
 }
 
@@ -294,7 +295,6 @@ ul{
         gap: 2rem;
         align-items: center;
         margin-bottom: 1rem;
-        background-color: #365314;
         flex-wrap: wrap;
     }
     
