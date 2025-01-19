@@ -15,7 +15,7 @@ LETTER SPACING
 0 / -2px
 
 FONT FAMILY
-Poppins 
+"M PLUS Rounded 1c", serif
 
 ---------- COLORS ----------
 
@@ -52,8 +52,68 @@ Black: #000 (Black)
  */
 
 
+ :root{
+    /* ---------- TYPOGRAPHY ---------- */
+
+
+/* FONT SIZES */
+    --text-sm: 1.2em;
+    --text-base: 1.6em;
+    --text-p: 2em;
+    --text-h5: 2.4em;
+    --text-h4: 3.2em;
+    --text-h3: 4em;
+    --text-h2: 4.8em;
+    --text-h1: 6.2em;
+
+/* FONT WEIGHT */
+    --text-normal: 400;
+    --text-bold: 700;
+
+/* LINE HEIGHT */
+    --line-height-tight: 1.2;
+    --line-height-normal: 1.5;
+
+/* LETTER SPACING */
+    --letter-space-tight: -2px;
+
+/* FONT FAMILY */
+    --font-family: "M PLUS Rounded 1c", serif; 
+
+    /* ---------- COLORS ---------- */
+
+/* PRIMARY */
+    --primary-tint: #a3e635;
+    --primary-base: #4d7c0f;
+    --primary-shade: #365314;
+
+/* SECONDARY */
+
+    --secondary-tint: #fde047;
+    --secondary-base: #eab308;
+    --secondary-shade: #a16207;
+
+/* TERTIARY */
+
+    --tertiary-tint: #f0abfc;
+    --tertiary-base: #d946ef;
+    --tertiary-shade: #86198f;
+
+/* GRAY */
+
+    --grey-base: #495057;
+    --grey-tint: #f1f3f5;
+    --grey-shade: #212529;
+
+    --white: #fff;
+    --black: #000;
+ }
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
 }
