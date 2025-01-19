@@ -57,14 +57,14 @@ Black: #000 (Black)
 
 
 /* FONT SIZES */
-    --text-sm: 1.2em;
-    --text-base: 1.6em;
-    --text-p: 2em;
-    --text-h5: 2.4em;
-    --text-h4: 3.2em;
-    --text-h3: 4em;
-    --text-h2: 4.8em;
-    --text-h1: 6.2em;
+    --text-sm: 1.2rem;
+    --text-base: 1.6rem;
+    --text-p: 2rem;
+    --text-h5: 2.4rem;
+    --text-h4: 3.2rem;
+    --text-h3: 4rem;
+    --text-h2: 4.8rem;
+    --text-h1: 6.2rem;
 
 /* FONT WEIGHT */
     --text-normal: 400;
@@ -117,3 +117,50 @@ Black: #000 (Black)
 html{
     font-size: 62.5%;
 }
+body{
+    line-height: var(--line-height-normal);
+    font-family: var(--font-family);
+    font-weight: var(--text-normal);
+    color: var(--grey-base);
+}
+.main-container{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1,h2,h3,h4,h5{
+    font-weight: var(--text-bold);
+    letter-spacing: var(--letter-space-tight);
+    line-height: var(--line-height-tight);
+    color: var(--grey-shade);
+    
+}
+
+h1{
+    font-size: var(--text-h1);
+}
+h2{
+    font-size: var(--text-h2);
+}
+h3{
+    font-size: var(--text-h3);
+}
+h4{
+    font-size: var(--text-h4);
+}
+h5{
+    font-size: var(--text-h5);
+}
+p{
+    font-size: var(--text-p);
+}
+a{
+    font-size: var(--text-base);
+    text-decoration: none;
+}
+.small-text{
+    font-size: var(--text-sm);
+}
+
