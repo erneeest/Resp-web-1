@@ -159,6 +159,7 @@ p{
     font-size: var(--text-p);
 }
 a{
+    color: var(--grey-shade);
     font-size: var(--text-base);
     text-decoration: none;
     display: inline-block;
@@ -170,12 +171,78 @@ ul{
     font-size: var(--text-sm);
 }
 
-/* ============ buttons ============ */
+/* ============ Components ============ */
 
 .btn{
     color: white;
-    background-color: var(--primary-base);
     padding: 1.5rem 3rem;
     border-radius: 12px;
     border: .3rem solid var(--grey-shade);
+    font-size: var(--text-p);
+    font-weight: var(--text-bold);
 }
+
+.btn-primary:link, .btn-primary:visited{
+    color: white;
+    background-color: var(--primary-base);
+    border: 2px solid var(--primary-base);
+}
+.btn-primary:hover, .btn-primary:active{
+    color: white;
+    background-color: var(--primary-shade);
+    border: 2px solid var(--primary-shade);
+}
+
+/* ============= SECTIONS ============= */
+
+.nav-bar{
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 8rem;
+}
+
+.website-logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+#nav-logo-text{
+    font-size: var(--text-h3);
+    font-weight: var(--text-bold);
+}
+
+/* ========== */
+
+.hero-section-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;    
+    background-color: var(--secondary-tint);
+    padding: 2rem;
+    border-radius: 40px;
+    width: 80%;
+    margin: 0 auto;
+}
+.hero-section-header{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.hero-section-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+}
+
+
+.hero-section-image{
+    width: 35rem;
+}
+
+
+
