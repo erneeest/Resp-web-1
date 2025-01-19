@@ -7,4 +7,5 @@ I started working this on **19/01/2025**
     CSS
     MIT LICENSE
 
-        practice svg, font, colors, flexbox, mediaquery 
+        practice: svg, font, colors, flexbox, mediaquery 
+        navbar, hero section, cta, contents, footer 
