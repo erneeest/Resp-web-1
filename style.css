@@ -309,7 +309,16 @@ ul{
         display: none;
         visibility: hidden;
     }
-    
+
+}
+@media(max-height: 668px){
+    .hero-section-div{
+        justify-content: center;
+    }
+    .hero-section-image{
+        display: none;
+        visibility: hidden;
+    }
 }
 
 
