@@ -203,7 +203,7 @@ ul{
     justify-content: space-around;
     gap: 8rem;
     align-items: center;
-    margin-bottom: 6rem;
+    border: 2px solid rgb(67, 5, 5);
 }
 
 .website-logo{
@@ -220,16 +220,22 @@ ul{
 
 /* ========== */
 
+.hero-section{
+    display: flex;
+    
+    height: calc(100vh - var(--view-height));
+    border: 2px solid rgb(0, 247, 185);
+
+}
+
 .hero-section-div{
     text-align: center;
     display: flex;
     flex-direction: row;
     align-items: center;    
-    /* background-color: var(--secondary-tint); */
-    padding: 2rem;
-    border-radius: 40px;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
+    border: 2px solid rgb(0, 247, 185);
 }
 .hero-section-header{
     display: flex;
@@ -267,10 +273,6 @@ ul{
 }
 
 @media(max-width: 1022px){
-    
-    .hero-section-div{
-        flex-direction: column;
-    }
 
     .nav-bar{
         justify-content: center;
@@ -282,11 +284,18 @@ ul{
         order: -1;
     }
  
+
+    .hero-section-div{
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    
 }
 @media(max-width: 765px){
-    
+
     .nav-bar{
-        height: auto;
         width: 80%;
         margin: 0 auto;
         display: flex;
@@ -294,8 +303,11 @@ ul{
         justify-content: center;
         gap: 2rem;
         align-items: center;
-        margin-bottom: 1rem;
-        flex-wrap: wrap;
+    }
+
+    #nav-dl, #nav-shp{    
+        display: none;
+        visibility: hidden;
     }
     
 }
