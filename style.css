@@ -203,7 +203,6 @@ ul{
     justify-content: space-around;
     gap: 8rem;
     align-items: center;
-    border: 2px solid rgb(67, 5, 5);
 }
 
 .website-logo{
@@ -222,9 +221,7 @@ ul{
 
 .hero-section{
     display: flex;
-    
     height: calc(100vh - var(--view-height));
-    border: 2px solid rgb(0, 247, 185);
 
 }
 
@@ -235,7 +232,6 @@ ul{
     align-items: center;    
     width: 90%;
     margin: 0 auto;
-    border: 2px solid rgb(0, 247, 185);
 }
 .hero-section-header{
     display: flex;
