@@ -283,7 +283,8 @@ ul{
     margin: 10rem 0;
     display: flex;
     flex-direction: row;
-
+    border: 1px solid var(--primary-base);
+    border-radius: 45px;
 }
 .sec-text{
     display: flex;
@@ -308,6 +309,19 @@ ul{
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+.social-icons{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+    padding: 1rem;
+    border-bottom: 1px solid black;
+    margin: 1rem;
+    flex-wrap: wrap;
+}
+.social-logo{
+    width: 30px;
 }
 
 
@@ -352,6 +366,23 @@ ul{
         visibility: hidden;
     }
 
+    /* ===== main media query ===== */
+    .image-on-top{
+        order: -1;
+    }
+    .main-sec{
+        flex-direction: column;
+       
+    }
+    .sec-image{
+        max-width: 40rem;
+        width: 100%;
+        align-self: center;
+        padding: 6rem;
+        border-radius: 40px;
+        background-color: var(--primary-base);
+    }
+    
 }
 @media(max-height: 668px){
     .hero-section-div{
@@ -362,6 +393,3 @@ ul{
         visibility: hidden;
     }
 }
-
-
-
