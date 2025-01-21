@@ -197,6 +197,7 @@ ul{
     color: white;
     background-color: var(--primary-shade);
     border: 2px solid var(--primary-shade);
+    transition: .3s;
 }
 
 
@@ -284,7 +285,7 @@ ul{
 /*======= main ======= */
 
 .main-sec{
-    margin: 10rem 0;
+    margin-bottom: 10rem;
     display: flex;
     flex-direction: row;
     border: 1px solid var(--primary-base);
