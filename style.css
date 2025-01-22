@@ -102,7 +102,7 @@ Black: #000 (Black)
 /* GRAY */
 
     --grey-base: #495057;
-    --grey-tint: #f1f3f5;
+    --grey-tint: #b7b7b7;
     --grey-shade: #212529;
 
     --white: #fff;
@@ -130,6 +130,8 @@ body{
     font-family: var(--font-family);
     font-weight: var(--text-normal);
     color: var(--grey-base);
+    /* background: rgb(207,255,207);
+background: linear-gradient(79deg, rgba(207,255,207,1) 0%, rgba(220,254,255,1) 100%); */
 }
 .main-container{
     max-width: 1200px;
@@ -180,24 +182,33 @@ ul{
 /* ============ Components ============ */
 
 .btn{
-    color: white;
+    color: var(--white);
     padding: 1.5rem 3rem;
     border-radius: 8px;
     border: .3rem solid var(--grey-shade);
     font-size: var(--text-p);
     font-weight: var(--text-bold);
+    transition: .3s;
 }
 
 .btn-primary:link, .btn-primary:visited{
-    color: white;
+    color: var(--white);
     background-color: var(--primary-base);
     border: 2px solid var(--primary-base);
 }
 .btn-primary:hover, .btn-primary:active{
-    color: white;
+    color: var(--white);
     background-color: var(--primary-shade);
     border: 2px solid var(--primary-shade);
-    transition: .3s;
+}
+
+.btn-secondary:link, .btn-secondary:visited{
+    color: var(--white);
+    border-color: white;
+}
+.btn-secondary:hover, .bta-secondary:active{
+    color: var(--grey-tint);
+    border-color: var(--grey-tint);
 }
 
 
@@ -309,6 +320,29 @@ ul{
     background: rgb(54,83,20);
     background: linear-gradient(323deg, rgba(54,83,20,1) 0%, rgba(77,124,15,1) 100%);
 }
+/*======= cta-section ======= */
+.cta-section{
+    margin: 15rem 0 5rem 0;
+}
+
+.cta-card{
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding: 15rem 5rem;
+    border-radius: 40px;
+    background: rgb(54,83,20);
+    background: linear-gradient(323deg, rgba(54,83,20,1) 0%, rgba(77,124,15,1) 100%);
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    color: white;
+}
+.cta-heading{
+    color: var(--white);
+}
 
 /*======= footer section ======= */
 .footer-section{
@@ -356,7 +390,7 @@ ul{
     
 }
 @media(max-width: 765px){
-
+    
     .nav-bar{
         width: 80%;
         margin: 0 auto;
@@ -388,7 +422,11 @@ ul{
         border-radius: 40px;
         background-color: var(--primary-base);
     }
-    
+
+    .cta-card{
+        padding: 10rem 5rem;
+    }
+
 }
 @media(max-height: 668px){
     .hero-section-div{
