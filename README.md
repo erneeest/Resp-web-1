@@ -16,3 +16,5 @@
 - cta
 - contents
 - footer 
+--git revert
+--git reset
